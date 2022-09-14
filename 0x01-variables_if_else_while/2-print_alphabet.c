@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-
 /**
- * main - lowercase alphabets
+ * main - print if the number is postive, zero, or negative
  *
- * Return: Always (Sucess)
+ * Return: 0
  */
 int main(void)
 {
@@ -14,9 +13,6 @@ int main(void)
 	{
 		putchar(ch);
 	}
-
 	putchar('\n');
 	return (0);
 }
-
-
