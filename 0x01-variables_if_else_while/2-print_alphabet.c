@@ -4,7 +4,7 @@
 /**
  * main - lowercase alphabets
  *
- * Return
+ * Return: Always (Sucess)
  */
 int main(void)
 {
