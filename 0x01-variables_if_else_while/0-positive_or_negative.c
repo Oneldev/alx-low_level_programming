@@ -5,15 +5,13 @@
 
 
 /**
+ * main - Prints random number to variable
  *
- * main - print if the number is postive, zero, or negative
- *
- *
- *Return: Always (Sucess)
- *
+ * Return: Alaways (sucessful)
  */
 
 int main(void)
+
 {
 	int n;
 
