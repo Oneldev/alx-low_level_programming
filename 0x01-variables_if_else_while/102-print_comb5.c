@@ -15,17 +15,19 @@ int main(void)
 	{
 		for (p = 0; p < 100; p++)
 		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-			putchar(' ');
-			putchar((p / 10) + '0');
-			putchar((p % 10) + '0');
-		if (i != 98 && p != 98 )
-		continue;
-		{
-			putchar(',');
-			putchar(' ');
-		}
+			if (p > i)
+			{
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
+				putchar(' ');
+				putchar((p / 10) + '0');
+				putchar((p % 10) + '0');
+				if (i != 98 && p != 98 )
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');
