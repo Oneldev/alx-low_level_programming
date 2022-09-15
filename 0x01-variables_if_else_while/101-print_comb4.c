@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print
- * 
+ * main - Prints
  * Return: 0
  */
 
@@ -18,7 +17,6 @@ int main(void)
 		f_d = (c / 100 + '0');
 		m_d = (c / 10 % 10 + '0');
 		l_d = (c % 10 + '0');
-		
 		if ((f_d < m_d) && (m_d < l_d))
 		{
 			putchar(f_d);
