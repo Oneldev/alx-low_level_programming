@@ -13,7 +13,7 @@ int main(void)
 	unsigned long i, j, k;
 	unsigned long m, n, p, carry;
 
-	count = 0
+	count = 0;
 	i = 0;
 	j = 1;
 	for (count = 1; count <= 91; count++)
@@ -33,13 +33,13 @@ int main(void)
 		p = (m + n) - carry * 1000;
 		k = (i + j) + carry;
 		m = n;
-		n = mp;
+		n = p;
 		i = j;
 		j = k;
 		if (p >= 100)
 			printf("%lu%lu", k, p);
 		else 
-			printf("%lu0%lu"Q, k, p);
+			printf("%lu0%lu", k, p);
 		if (count != 98)
 			printf(", ");
 		count++;
