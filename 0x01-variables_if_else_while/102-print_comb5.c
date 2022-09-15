@@ -11,21 +11,21 @@ int main(void)
 {
 	int i, p;
 
-	for (i = 0; i <= 98; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (p = 0; p <= 99; p++)
+		for (p = 0; p < 100; p++)
 		{
 			putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
 			putchar(' ');
 			putchar((p / 10) + '0');
 			putchar((p % 10) + '0');
-			if (i == 98 && p == 99 )
-			continue;
-			{
-				putchar(',');
-				putchar(' ');
-			}
+		if (i != 98 && p != 98 )
+		continue;
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		}
 	}
 	putchar('\n');
