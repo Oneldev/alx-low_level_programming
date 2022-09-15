@@ -15,7 +15,7 @@ for (i = 0; i <= 99; i++)
 {
 for (p = 0; p <= 99; p++)
 {
-if (i > j && i != i)
+if (i > p && i != p)
 {
 putchar((i / 10) + '0');
 putchar((i % 10) + '0');
