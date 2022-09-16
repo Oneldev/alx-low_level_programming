@@ -8,16 +8,32 @@
 
 void print_number(int n)
 {
-unsigned int num = n;
+long len, res, i, temp, expo;
 
-if (n < 0)
+res = n;
+expo = len =  1;
+/*Check negatives */
+if (res < 0)
 {
-putchar('-');
-num = -num;
+res *= -1;
+_putchar('-');
 }
-if (num > 9)
+/**/
+temp = res;
+while (temp >= 10)
 {
-print_number(num / 10);
+len++;
+temp /= 10;
 }
-putchar(num % 10 + '0');
+/*Create Exponent */
+for (i = 1; i < len; i++)
+expo *= 10;
+
+/*Main */
+while (expo > 1)
+{
+_putchar((res / expo) % 10 + '0');
+expo /= 10;
+}
+_putchar(res % 10 + '0');
 }
