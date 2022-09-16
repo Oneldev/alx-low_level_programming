@@ -1,14 +1,13 @@
 #include "main.h"
-
 /**
- * print_number - Prints a number
- * @n: The number to print
- * Return: void
+ * print_number - prints numbers
+ * @n: number to be printed
+ * Return:void
  */
 
 void print_number(int n)
 {
-unsigned int x; 
+unsigned int x;
 
 x = n;
 if (n < 0)
